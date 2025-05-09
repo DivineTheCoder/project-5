@@ -1,0 +1,723 @@
+/* Importing Font and FontAwesome icons */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css');
+
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400&family=Montserrat:wght@100;900&display=swap');
+
+/* General styling starts here */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+html {
+  font-size: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+/* General styling ends here */
+
+/* HomePage styling starts here */
+.HomePage {
+  background-color: #3c115f;
+}
+
+/* HomePage header styling starts here */
+.HomePage .header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 2.5rem;
+}
+
+.HomePage .header .logo {
+  color: whitesmoke;
+  font-size: 3rem;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 900;
+}
+
+.HomePage .header .dropdown-container {
+  position: relative;
+  display: inline-block;
+}
+
+.HomePage .header .dropdown-container .dropdown-button {
+  color: whitesmoke;
+  font-size: 3rem;
+}
+
+.HomePage .header .dropdown-container .dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #333;
+  min-width: 130px;
+  padding: 1rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 5;
+  border-radius: 5px;
+}
+
+.HomePage .header .dropdown-container .dropdown-content a {
+  display: block;
+  color: whitesmoke;
+  font-size: 1.7rem;
+  text-decoration: none;
+  padding: 1rem 0;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.HomePage .header .dropdown-container .dropdown-content a:hover {
+  background-color: dodgerblue;
+  color: white;
+  border-radius: 5px;
+}
+
+.HomePage .header .dropdown-container:hover .dropdown-content,
+.HomePage .header .dropdown-container:focus-within .dropdown-content {
+  display: block;
+}
+/* HomePage header styling ends here */
+
+/* HomePage main content styling starts here */
+.HomePage .main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10rem;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.HomePage .main-content h1 {
+  color: whitesmoke;
+  font-size: 7rem;
+  text-align: center;
+  text-decoration: underline;
+  font-family: Arial, sans-serif;
+  font-weight: 900;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.HomePage .main-content p {
+  color: whitesmoke;
+  font-size: 2.7rem;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  word-spacing: 0.8rem;
+}
+
+.HomePage .main-content button {
+  background-color: #ffffff;
+  color: #333;
+  font-size: 1.1rem;
+  font-weight: bolder;
+  padding: 1rem 13rem;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.HomePage .main-content button:hover {
+  background-color: dodgerblue;
+  color: white;
+}
+/* HomePage main content styling ends here */
+/* HomePage styling ends here */
+
+/* FormInput styling starts here */
+.FormInput {
+  background-color: white;
+}
+
+.FormInput .container {
+  max-width: 700px;
+  margin: 5rem auto;
+  padding: 4rem;
+  box-sizing: border-box;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: white;
+}
+
+.FormInput .container .header {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.FormInput .container .header .header-top {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+}
+
+.FormInput .container .header .header-top .logo {
+  color: #3c115f;
+  font-size: 3rem;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 900;
+}
+
+.FormInput .container .header .header-top .dropdown-container {
+  position: relative;
+  display: inline-block;
+}
+
+.FormInput .container .header .header-top .dropdown-container .dropdown-button {
+  color: #3c115f;
+  font-size: 2rem;
+}
+
+.FormInput .container .header .header-top .dropdown-container .dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #333;
+  min-width: 100px;
+  padding: 1rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 5;
+  border-radius: 5px;
+}
+
+.FormInput .container .header .header-top .dropdown-container .dropdown-content a {
+  display: block;
+  color: whitesmoke;
+  font-size: 1.1rem;
+  text-decoration: none;
+  padding: 0.5rem 0;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.FormInput .container .header .header-top .dropdown-container .dropdown-content a:hover {
+  background-color: dodgerblue;
+  color: white;
+  border-radius: 5px;
+}
+
+.FormInput .container .header .header-top .dropdown-container:hover .dropdown-content,
+.FormInput .container .header .header-top .dropdown-container:focus-within .dropdown-content {
+  display: block;
+}
+
+.FormInput .header-bottom {
+  width: 100%;
+}
+
+.FormInput .header-bottom h2 {
+  color: #333;
+  font-size: 2.3rem;
+  font-weight: 600;
+  word-spacing: 9px;
+  letter-spacing: 5px;
+}
+
+.FormInput .main-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
+.FormInput .main-content .form-section {
+  width: 100%;
+}
+
+.FormInput .main-content .form-section .form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
+.FormInput .main-content .form-section .form > .email-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+  position: relative;
+}
+
+.FormInput .main-content .form-section .form .email-container > label {
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.FormInput .main-content .form-section .form .email-container > input[type="email"] {
+  background-color: #FFFFF0;
+  border: none;
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+  height: 4rem;
+  font-size: 1.6rem;
+  outline: none;
+  border-radius: 9px;
+}
+
+.FormInput .main-content .form-section .form > .email-container::after {
+  content: "\f00c";
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: green;
+  position: absolute;
+  right: 8px;
+  top: 70%;
+  transform: translateY(-50%);
+  margin-right: 2rem;
+  pointer-events: none;
+}
+
+.FormInput .main-content .form-section .form > .password-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+  position: relative;
+}
+
+.FormInput .main-content .form-section .form .password-container > label {
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.FormInput .main-content .form-section .form .password-container > input[type="password"] {
+  background-color: #FFFFF0;
+  border: none;
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+  height: 4rem;
+  font-size: 1.6rem;
+  outline: none;
+  border-radius: 9px;
+}
+
+.FormInput .main-content .form-section .form > .password-container::after {
+  content: "\f06e";
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: gray;
+  position: absolute;
+  right: 8px;
+  top: 70%;
+  transform: translateY(-50%);
+  margin-right: 2rem;
+  pointer-events: none;
+}
+
+.FormInput .account-container {
+  width: 100%;
+  text-align: center;
+}
+
+.FormInput .account-container .create-button {
+  width: 100%;
+  background-color: #3c115f;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bolder;
+  padding: 1rem 0;
+  border: none;
+  border-radius: 9px;
+  cursor: pointer;
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  margin-bottom: 2rem;
+}
+
+.FormInput .account-container .create-button:hover {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.FormInput .account-container > p {
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.FormInput .account-container .google-button {
+  width: 100%;
+  border: none;
+  border-radius: 9px;
+  cursor: pointer;
+  padding: 1rem 0;
+  box-sizing: border-box;
+  background-color: #FBF5DF;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.FormInput .account-container .facebook-button {
+  width: 100%;
+  color: white;
+  border: none;
+  border-radius: 9px;
+  cursor: pointer;
+  padding: 1rem 0;
+  box-sizing: border-box;
+  background-color: dodgerblue;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.FormInput .account-container p:nth-of-type(2) {
+  color: #333;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  margin-bottom: 2rem;
+}
+
+.FormInput .footer {
+  width: 100%;
+  margin: 2rem 0 0 0;      
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  background: white;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+}
+.FormInput .footer > i {
+  color: gray;
+  font-size: 2rem;
+}
+
+.FormInput .footer div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.1rem;
+  color: gray;
+  font-size: 1.5rem;
+}
+/* FormInput styling ends here */
+
+/* WelcomePage styling starts here */
+.WelcomePage {
+  background-color: white;
+}
+
+.WelcomePage .header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem;
+  margin-top: 4rem;
+}
+
+.WelcomePage .header .header-top {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.WelcomePage .header .header-top .logo {
+  color: #3c115f;
+  font-size: 3rem;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 900;
+}
+
+.WelcomePage .header .header-top .dropdown-container {
+  display: inline-block;
+  position: relative;
+}
+
+.WelcomePage .header .header-top .dropdown-container .dropdown-button {
+  color: black;
+  font-size: 3rem;
+}
+
+.WelcomePage .header .header-top .dropdown-container .dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #333;
+  padding: 1rem 0;
+  min-width: 120px;
+  border-radius: 9px;
+  z-index: 5;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.WelcomePage .header .header-top .dropdown-container .dropdown-content a {
+  color: whitesmoke;
+  display: block;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 1.3rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.WelcomePage .header .header-top .dropdown-container .dropdown-content a:hover {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.WelcomePage .header .header-top .dropdown-container:hover .dropdown-content,
+.WelcomePage .header .header-top .dropdown-container:focus-within .dropdown-content {
+  display: block;
+}
+
+.WelcomePage .header .header-bottom {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+}
+
+.WelcomePage .header .header-bottom h3 {
+  color: #333;
+  font-size: 3rem;
+  margin-bottom: 5rem;
+}
+
+.WelcomePage .header .header-bottom .card {
+  width: 100%;
+  background-color: #3c115f;
+  padding: 4rem 8rem;
+  text-align: center;
+  border-radius: 1.5rem;
+  color: whitesmoke;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.WelcomePage .header .header-bottom .card h1 {
+  color: whitesmoke;
+  font-weight: bolder;
+  font-size: 6rem;
+}
+
+.WelcomePage .header .header-bottom .card p {
+  color: whitesmoke;
+  font-size: 3rem;
+  font-family: Arial;
+}
+
+.WelcomePage .header .header-bottom .card .card-icons {
+  display: flex;
+  gap: 0.5rem;
+  animation: moveLeft 4s linear infinite;
+  overflow: hidden;
+  width: 50%;
+}
+
+@keyframes moveLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.WelcomePage .header .header-bottom .navbar {
+  width: 100%;
+  background-color: #f4f4f4;
+  margin-top: 3rem;
+  padding: 2rem 0.15rem;
+  border-radius: 3rem;
+}
+
+.WelcomePage .header .header-bottom .navbar ul {
+  width: 100%;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.WelcomePage .header .header-bottom .navbar ul li {
+  flex-grow: 1;
+  flex-basis: 400px;
+  text-align: center;
+}
+
+.WelcomePage .header .header-bottom .navbar ul li a {
+  color: gray;
+  font-size: 2rem;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 2rem 23rem;
+  border-radius: 1.3rem;
+  transition: all 0.3s ease;
+}
+
+.WelcomePage .header .header-bottom .navbar ul li:first-child a {
+  color: #3c115f;
+}
+
+.WelcomePage .header .header-bottom .navbar ul li a:hover {
+  background-color: white;
+}
+
+.WelcomePage .main-content {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.WelcomePage .main-content .main-text {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.WelcomePage .main-content .main-text .stocks-title {
+  font-size: 4rem;
+  word-spacing: 3px;
+  letter-spacing: 4px;
+}
+
+.WelcomePage .main-content .main-text .see-all-link {
+  font-size: 2.5rem;
+  word-spacing: 3px;
+  letter-spacing: 4px;
+}
+
+.WelcomePage .main-content .stock-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.WelcomePage .main-content .stock-list .stock-card {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 1rem 2rem;
+}
+
+.WelcomePage .main-content .stock-list .stock-card .stock-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1rem;
+}
+
+.WelcomePage .main-content .stock-list .stock-card .stock-info .stock-circle {
+  background-color: gray;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.WelcomePage .main-content .stock-list .stock-card .stock-info .stock-name {
+  color: #333;
+  font-size: 1.7rem;
+}
+
+.WelcomePage .main-content .stock-list .stock-card .stock-graph {
+  width: 100%;
+  max-width: 250px;  
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 2rem;
+  overflow: hidden;
+}
+
+.WelcomePage .main-content .stock-list .stock-card .stock-graph img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+}
+
+.WelcomePage .stock-stats .stock-price {
+  font-size: 4rem;
+}
+
+.WelcomePage .stock-stats .stock-change {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+ 
+
+
+
+
+
